@@ -5,6 +5,7 @@ namespace App;
 abstract class InventoryItem
 {
     const MAX_QUALITY = 50;
+    const MIN_QUALITY = 0;
 
     /** @var int */
     public $quality;
@@ -18,5 +19,8 @@ abstract class InventoryItem
         $this->sellIn = $sellIn;
     }
 
+    /**
+     * Changes properties of item if necessary
+     */
     abstract public function tick();
 }

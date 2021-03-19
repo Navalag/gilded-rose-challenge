@@ -6,6 +6,9 @@ use App\InventoryItem;
 
 class Conjured extends InventoryItem
 {
+    /**
+     * {@inheritDoc}
+     */
     public function tick()
     {
         $this->sellIn -= 1;

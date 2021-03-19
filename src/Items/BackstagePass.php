@@ -6,12 +6,15 @@ use App\InventoryItem;
 
 class BackstagePass extends InventoryItem
 {
+    /**
+     * {@inheritDoc}
+     */
     public function tick()
     {
         $this->sellIn -= 1;
 
         if ($this->sellIn < 0) {
-            $quality = 0;
+            $quality = parent::MIN_QUALITY;
         } else {
             $quality = $this->quality + 1;
 

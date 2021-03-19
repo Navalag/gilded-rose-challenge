@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App;
+namespace App\Items;
 
 
 abstract class Item

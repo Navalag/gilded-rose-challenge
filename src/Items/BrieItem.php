@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App;
+namespace App\Items;
 
 
 class BrieItem extends Item

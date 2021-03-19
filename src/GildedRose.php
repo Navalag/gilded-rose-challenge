@@ -2,6 +2,13 @@
 
 namespace App;
 
+use App\Items\BackstagePassItem;
+use App\Items\BrieItem;
+use App\Items\ConjuredCakeItem;
+use App\Items\Item;
+use App\Items\NormalItem;
+use App\Items\SulfurasItem;
+
 class GildedRose
 {
     public $name;

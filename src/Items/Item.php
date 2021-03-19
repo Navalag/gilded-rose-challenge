@@ -84,6 +84,11 @@ abstract class Item
         return 50;
     }
 
+    /**
+     * Whether the item starts with "Conjured", e.g "Conjured mana potion"
+     * 
+     * @return bool
+     */
     protected function isConjured(): bool
     {
         $conjuredStr = explode(' ', $this->name)[0];
@@ -113,12 +118,12 @@ abstract class Item
         $this->quality = $quality;
     }
 
-    public function getsellIn(): int
+    public function getSellIn(): int
     {
         return $this->sellIn;
     }
 
-    public function setsellIn(string $sellIn): void
+    public function setSellIn(string $sellIn): void
     {
         $this->sellIn = $sellIn;
     }

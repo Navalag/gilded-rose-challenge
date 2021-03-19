@@ -96,38 +96,6 @@ abstract class Item
         return strtolower($conjuredStr) === 'conjured';
     }
 
-    /* Getters and setters */
-
-    public function getName(): string
-    {
-        return $this->name;
-    }
-
-    public function setName(string $name): void
-    {
-        $this->name = $name;
-    }
-
-    public function getQuality(): int
-    {
-        return $this->quality;
-    }
-
-    public function setQuality(int $quality): void
-    {
-        $this->quality = $quality;
-    }
-
-    public function getSellIn(): int
-    {
-        return $this->sellIn;
-    }
-
-    public function setSellIn(string $sellIn): void
-    {
-        $this->sellIn = $sellIn;
-    }
-
     public function __get($name) {
         return $this->$name;
     }

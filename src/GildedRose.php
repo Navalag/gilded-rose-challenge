@@ -16,14 +16,14 @@ class GildedRose
     {
         $this->item = $item;
     }
-    
+
     /**
      * Create a new instance of this class with the specified item
-     * 
+     *
      * @param string $itemName - name of the item
      * @param int $itemQuality - quality of the item
      * @param int $sellIn - in how many days the item has to be sold
-     * @return static
+     * @return Item
      */
     public static function of(string $itemName, int $itemQuality, int $sellIn): Item
     {
